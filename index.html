@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamento IFSP-2024</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark.css">
+<body>
+
+</head>
+<body>
+    <div class="w3-container"></div>
+        <header class="w3-teal">
+            <h1>W3-CSS Parking</h1>
+        </header>
+
+        <div class="w3-row-padding">
+            <div class="w3-half">
+                <label for="Tarifa">Tarifa</label>
+                <input class="w3-input w3-border" type="number" id="tarifa" value="10" min="10" onmousedown="atualizarTarifa()"readonly>
+            </div>
+            <div class="w3-half">
+                <label for="Entrada">Data atual</label>
+                <input class="w3-input w3-border" type="date" id="datatual" value="2024-10-18">    
+            </div>
+        </div>
+
+        <div class="container">
+            <form class="w3-container w3-card-4 w3-light-grey">
+                <fieldset>
+                    <legend><h2>Novo carro</h2></legend>
+                    <div class="w3-row-padding">
+                        <div class="w3-half">
+                            <label for="entrada">Hora entrada</label>
+                            <input class="w3-input" type="time" name="entrada" id="inputEntrada" value="8:00" min='8:00' max='18:00'required>
+                         </div>
+                    
+                        <div class="w3-half">
+                            <label for="entrada">Hora saída</label>
+                            <input class="w3-input" type="time" name="entrada" id="inputSaida" value="8:00" min='8:00' max='18:00'required>
+                        </div>
+                    
+                        <div class="w3-half">
+                            <label for="placa">Placa</label>
+                            <input class="w3-input" type="text" name="placa" id="placa" value="XYZ 256" required>
+                        </div>
+                    
+                        <div class="w3-half">
+                            <label for="modelo">Marca/cor</label>
+                            <input class="w3-input"type="text" name="modelo" id="modelo" value="Fiat branco">
+                        </div>
+                    
+                    <div class="w3-third">
+                        <label for="lojaSelect">Convênio</label>
+                        <select class="w3-select" id="lojaSelect" name="lojaSelect">
+                            <option value="0">selecione</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="w3-bar w3-center">
+                    <button type="submit" class="w3-button w3-teal" id="btRegistrar">Registrar</button>
+                    <button type="reset" class="w3-button w3-black">Cancelar</button>
+                </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div  class="w3-container">
+        <h2 class="w3-teal">Garagem</h2>   
+        <div id="card-container" class="w3-row-padding w3-margin-top">
+            
+        </div>  
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="./js/entrada.js"> </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+[
+  {
+    "nomeLoja": "Loja A",
+    "desconto": 5
+  },
+  {
+    "nomeLoja": "Loja B",
+    "desconto": 10
+  },
+  {
+    "nomeLoja": "Loja C",
+    "desconto": 5
+  },
+  {
+    "nomeLoja": "Loja D",
+    "desconto": 10
+  }
+]
